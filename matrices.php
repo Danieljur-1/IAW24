@@ -19,6 +19,10 @@
         .camilo{
             color:red;
         }
+        .numerico{
+            color:yellow;
+            background-color: blue;
+        }
    
     </style>
             </head>
@@ -54,13 +58,17 @@
         print "<pre>";
         print_r($datos);
         print "</pre>";
+
+
+        $numero = ['telefono' => 424153289];
         
 
+        //array_pop($numero); //elimino el valor del array $numero
 
 
-
-
-
+        print "<p>Mi nº de teléfono es <span class='numerico'> {$numero['telefono']}</span></p>\n";
+        //Poner con corchetes el pack completo + la variable interna con llaves
+        
 
 
             $datos = [];
