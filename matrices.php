@@ -70,19 +70,45 @@
         //Poner con corchetes el pack completo + la variable interna con llaves
         
 
-
+//se visualiza el array general
+        //el array [1]
             $datos = [];
             $datos[1]["nombre"] = "Santiago";
             $datos[1]["apellidos"] = "Ramón y Cajal";
+        //se cierra el array [1]
+
+        //el array [2]
             $datos[2]["nombre"] = "Leonardo";
             $datos[2]["apellidos"] = "Torres Quevedo";
             
             print "<pre>";
             print_r($datos);
-            
+        //se cierra el array2
+//se cierra el array general
+        print "<pre>";
+        print "El contenido se ve parecido, pero el código es bastante diferente\n";
+//se visualiza el array general
+        //el array [1]
+        $datos = [];
+        $datos[1]["nombre"] = "Santiago";
+        $datos[2]["apellidos"] = "Torres Quevedo";
+    //se cierra el array [1]
+            //a pesar del orden escrito, en la web se estructura, 
+            //según el orden de los nº, por lo que se está viendo:
+            //Santiago
+            //Ramón y Cajal, pero luego se ven los apellidos y luego el nombre
+    //el array [2]
+        $datos[2]["nombre"] = "Leonardo";
+        $datos[1]["apellidos"] = "Ramón y Cajal";
+        
+        
+        print "<pre>";
+        print_r($datos);
+                //se cierra el array2
+            //se cierra el array general
 
-
-    ?>
+            ?>
+    
     
 </body>
 </html>
