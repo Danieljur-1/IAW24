@@ -79,7 +79,7 @@
             
             print "<pre>";
             print_r($datos);
-            print "</pre>";
+            
 
 
     ?>
